@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="left-section">
                 <div className="logo">
                     <img
-                        src="./../../../public/myPhotoCircle.png"
+                        src="https://avatars.githubusercontent.com/u/141724680?s=400&u=37f537f6f8c5ea1ddfc0cb50b4c653b9300c15eb&v=4"
                         alt="avatar"
                         className="avatar"
                     />
