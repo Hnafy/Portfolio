@@ -1,0 +1,60 @@
+.hero{
+    display: flex;
+    align-items: center;
+}
+.hero .left-section{
+    flex-grow: 1;
+}
+.hero .left-section .logo{
+    display: flex;
+    align-items: end;
+    gap: 0.6rem;
+}
+.hero .left-section .logo .avatar{
+    width: 135px;
+    border-radius: 50%;
+    border: 1px solid #2dd4bf;
+    padding: 1px;
+    box-shadow: 2px 2px 40px #dad9d99a inset;
+}
+.hero .left-section .logo .icon-verified{
+    color: var(--blue);
+    display: block;
+    padding-bottom: 10px;
+}
+.left-section .title{
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+.left-section .sub-title{
+    color: var(--sub-title);
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    margin-bottom: 32px;
+    letter-spacing: 0.1rem;
+}
+.left-section .icons i{
+    margin-right: 20px;
+    font-size: 1.3rem;
+    color: var(--sub-title);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.left-section .icons i:hover{
+    font-size: 1.4rem;
+    color: var(--icon-hover);
+}
+.heroAnimation{
+    width: 100%;
+    translate: 100px 55px;
+}
+.hero .right-section{
+    width: 100%;
+}
+@media (max-width: 1250px){
+    .hero .right-section{
+        display: none;
+    }
+}

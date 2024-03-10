@@ -1,0 +1,105 @@
+main{
+    display: flex;
+    gap: 3rem;
+}
+main .left-section{
+    display: flex;
+    flex-direction: column;
+}
+main .left-section button{
+    cursor: pointer;
+    background-color: var(--btn);
+    width: 11rem;
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: var(--title);
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    transition: 0.1s;
+    border: none;
+}
+main .left-section button:hover{
+    opacity: 1;
+}
+.btn-active{
+    font-weight: bold;
+    opacity: 1 !important;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+    border: 2px solid var(--blue) !important;
+}
+main .right-section{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.card{
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+    max-width: 400px;
+}
+.card:hover{
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    scale: 1.01;
+}
+.card .content{
+    padding: 1rem 0.4rem;
+    background-image: linear-gradient(#e1ffff0d ,#e1ffff0d);
+}
+.card .content .title{
+    color: var(--title);
+    text-transform: capitalize;
+}
+.card .content .sub-title{
+    color: var(--sub-title);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.1rem;
+}
+.card .content .more{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-github,
+.icon-arrow-right{
+    color: var(--sub-title);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.icon-github:hover{
+    font-size: 1.6rem;
+    color: var(--title);
+}
+.card .content .more .left .link{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.card .content .more .left span{
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+.card .content .more .left span:hover{
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+@media (max-width: 700px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .left-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+}
