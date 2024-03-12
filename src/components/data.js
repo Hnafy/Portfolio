@@ -55,4 +55,12 @@ export default [] = [
         category: ["all", "html","tw","react"],
         body: "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
     },
+    {
+        id: 8,
+        title: "Prayer times",
+        img: "https://github.com/Hnafy/Tarmeez_Prayer_Times/blob/main/public/Prayer%20Times.jpeg?raw=true",
+        page: "https://main--hanafy-prayer-times.netlify.app/",
+        category: ["all", "html","css","react"],
+        body: "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+    },
 ];
