@@ -29,7 +29,13 @@ export default function Hero() {
                     developing new platforms
                 </p>
                 <div className="icons">
-                    <i className="icon-twitter" />
+                    <i className="icon-twitter" 
+                    onClick={() =>
+                            window.open(
+                                "https://x.com/a7med7530?t=75MbfvUgSbrh-EnSsqAX2A&s=09",
+                                "_blank"
+                            )
+                        }/>
                     <i
                         className="icon-instagram"
                         onClick={() =>
