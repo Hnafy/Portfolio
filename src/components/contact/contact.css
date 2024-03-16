@@ -67,6 +67,7 @@ section.contact-us .submit:hover {
     align-items: center;
 }
 .alert{
+    max-width: 300px;
     padding: 20px 10px;
     width: 400px;
     background-color: #1ac91a;

@@ -76,6 +76,7 @@ export default function Main() {
                                         height: "300px",
                                         borderRadius: "4px",
                                     }}
+                                    className="card_image"
                                     onClick={()=>window.open(item.page,'_blank')}
                                 />
                                 <div className="content">

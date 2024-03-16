@@ -6,7 +6,14 @@ import contactAnimation from "./../../animation/animationContact.json";
 
 export default function Contact() {
     const [state, handleSubmit] = useForm("mayregkj");
-    const [close, setClose] = useState(true);
+    const [showAlert, setShowAlert] = useState(false);
+
+    const handleAlert = () => {
+        setShowAlert(true);
+        setTimeout(() => {
+            setShowAlert(false);
+        }, 5000);
+    };
     return (
         <section className="contact-us">
             <h1 className="title">
@@ -45,18 +52,16 @@ export default function Contact() {
                         type="submit"
                         disabled={state.submitting}
                         className="submit"
+                        onClick={handleAlert}
                     >
                         {state.submitting ? "Submitting .." : "Submit"}
                     </button>
-                    {state.succeeded &&
-                        (close ? (
-                            <div class="alert" onClick={() => setClose(false)}>
-                                <span>Send Email Has Been Succeeded</span>
-                            </div>
-                        ) : (
-                            setClose(true)
-                        ))}
                 </form>
+                {showAlert && (
+                    <div className="alert" onClick={() => setShowAlert(false)}>
+                        <span>Send Email Has Been Succeeded</span>
+                    </div>
+                )}
                 <div className="border animation"><Lottie animationData={contactAnimation} style={{height:"355px"}} className="contactAnimation"/></div>
             </div>
         </section>
