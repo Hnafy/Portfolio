@@ -6,6 +6,7 @@ import data from "../data";
 export default function Main() {
     let [active, setActive] = useState("all");
     let [content, setContent] = useState(data);
+    let [arr, setArr] = useState(content)
     function handelClick(categoryBtn) {
         setActive(categoryBtn);
         const newArr = content.filter((item) => {
@@ -14,14 +15,14 @@ export default function Main() {
             });
             return category === categoryBtn;
         });
-        setContent(newArr);
+        setArr(newArr);
     }
     return (
         <main>
             <div className="left-section">
                 <button
                     onClick={() => {
-                        setActive("all");
+                        handelClick("all");
                         setContent(data);
                     }}
                     className={active === "all" ? "btn-active" : null}
@@ -55,7 +56,7 @@ export default function Main() {
             </div>
             <div className="right-section">
                 <AnimatePresence>
-                    {content.map((item) => {
+                    {arr.map((item) => {
                         return (
                             <motion.article
                                 layout
